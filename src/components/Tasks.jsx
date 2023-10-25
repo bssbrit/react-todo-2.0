@@ -4,13 +4,26 @@ const Tasks = ({tasks, setTasks}) => {
     const newList = tasks.filter(task => task.id !== id)
     setTasks(newList)
   }
+  const changeStatus = function (id) {
+    console.log(tasks)
+  const updatedTaks = tasks.map((task) => {
+    if(task.id == id) {task.status = !task.status; console.log(task.status); return task}
+    else return task
+  })
   
+  console.log(updatedTaks)
+  setTasks(updatedTaks) 
+ 
+  /*  if(task.id == id) {task.status = !task.status; console.log(task.status)}
+   else {console.log("hi")}
+   setTasks(...tasks) */
+  }
   
   return (
     <div>
       {tasks.map((task) => (
         <div className={task} key={task.id}>
-            <button onClick={() => {task.status = !task.status;  setTasks(...tasks);} } style={{
+            <button onClick={() => changeStatus(task.id)} style={{
     width: '50px', // Adjust the width and height as needed
     height: '50px',
     borderRadius: '50%', 
