@@ -5,18 +5,11 @@ const Tasks = ({tasks, setTasks}) => {
     setTasks(newList)
   }
   const changeStatus = function (id) {
-    console.log(tasks)
-  const updatedTaks = tasks.map((task) => {
+   const updatedTaks = tasks.map((task) => {
     if(task.id == id) {task.status = !task.status; console.log(task.status); return task}
     else return task
   })
-  
-  console.log(updatedTaks)
   setTasks(updatedTaks) 
- 
-  /*  if(task.id == id) {task.status = !task.status; console.log(task.status)}
-   else {console.log("hi")}
-   setTasks(...tasks) */
   }
   
   return (

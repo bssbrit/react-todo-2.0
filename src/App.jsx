@@ -2,6 +2,8 @@ import { useState } from 'react'
 
 import './App.css'
 import Tasks from './components/Tasks'
+import TaskMaker from './components/TaskMaker'
+import Header from './components/Header'
 function App() {
   const [tasks, setTasks] = useState( [
     { id: 1, description: 'Complete project proposal', status: false },
@@ -12,6 +14,9 @@ function App() {
 
   return (
     <div>
+      
+      <Header/>
+      <TaskMaker tasks={tasks} setTasks={setTasks}/>
       <Tasks tasks={tasks} setTasks={setTasks}/>
     </div>
   )
