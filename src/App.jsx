@@ -12,11 +12,12 @@ function App() {
     { id: 4, description: 'Write a blog post', status: true },
     { id: 5, description: 'Finish coding assignment', status: false}
   ])
+ 
   const [tasks, setTasks] = useState([...backUpTasks])
   return (
-    <div>
+    <div >
       
-      <Header/>
+      <Header />
       <TaskMaker tasks={tasks} setTasks={setTasks} backUptasks={backUpTasks} setBackup= {setBackUp}/>
       <Tasks tasks={tasks} setTasks={setTasks} backUpTasks={backUpTasks} setBackUp = {setBackUp}/>
       <TodosChooser tasks={tasks} setTasks={setTasks} backUpTasks={backUpTasks} setBackUp={setBackUp}/>
