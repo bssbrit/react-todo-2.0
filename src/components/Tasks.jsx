@@ -1,8 +1,10 @@
 
-const Tasks = ({tasks, setTasks}) => {
+const Tasks = ({tasks, setTasks, backUpTasks, setBackUp}) => {
   const removeTask = function (id) {
     const newList = tasks.filter(task => task.id !== id)
+    const newBackUp = backUpTasks.filter(task => task.id !== id)
     setTasks(newList)
+    setBackUp(newBackUp)
   }
   const changeStatus = function (id) {
    const updatedTaks = tasks.map((task) => {
