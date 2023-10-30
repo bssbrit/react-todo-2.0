@@ -15,13 +15,14 @@ function App() {
  
   const [tasks, setTasks] = useState([...backUpTasks])
   return (
-    <div className='container'>
+    <>
       
       <Header />
       <TaskMaker tasks={tasks} setTasks={setTasks} backUptasks={backUpTasks} setBackup= {setBackUp}/>
       <Tasks tasks={tasks} setTasks={setTasks} backUpTasks={backUpTasks} setBackUp = {setBackUp}/>
       <TodosChooser tasks={tasks} setTasks={setTasks} backUpTasks={backUpTasks} setBackUp={setBackUp}/>
-    </div>
+      <p>Drag and drop to reorder the list</p>
+    </>
   )
 }
 

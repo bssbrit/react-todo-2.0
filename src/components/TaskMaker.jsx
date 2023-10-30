@@ -19,7 +19,9 @@ const TaskMaker = ({tasks, setTasks, backUptasks, setBackup}) => {
   }
 
   return (
-    <div>
+    <div className="taskMaker containerItem" /* style={{
+      backgroundColor: document.body.className == "lightTheme"  ? 'green' :  'red'
+    }}*/> 
       
      <form  onSubmit={handleSubmit}>
      <input style={{width: '50px', // Adjust the width and height as needed

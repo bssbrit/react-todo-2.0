@@ -15,9 +15,9 @@ const Tasks = ({tasks, setTasks, backUpTasks, setBackUp}) => {
   }
   
   return (
-    <div>
+    <div >
       {tasks.map((task) => (
-        <div className={task} key={task.id}>
+        <div className={task} key={task.id} >
             <button onClick={() => changeStatus(task.id)} style={{
     width: '50px', // Adjust the width and height as needed
     height: '50px',
@@ -27,7 +27,7 @@ const Tasks = ({tasks, setTasks, backUpTasks, setBackUp}) => {
   }}></button>
             <h2>{task.description}</h2> 
             
-            <button onClick={() => removeTask(task.id)}>Remover</button>
+            <button onClick={() => removeTask(task.id)} style={{color: 'red', borderStyle: 'none', backgroundColor: 'white'}}>X</button>
             </div>
             
       ))}

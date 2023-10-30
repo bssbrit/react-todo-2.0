@@ -12,34 +12,67 @@ body {
   height: 100vh;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 18px;
-  background-image: url("../ProjectFiles/todo-app-main/images/bg-desktop-light.jpg")
-  ; background-repeat: no-repeat;
+  
   /* font-family: 'Rubik', sans-serif;
     weight 700
   */
-  color: hsl(235, 19%, 35%)
+   
 }
 .lightTheme {
   background-image: url("../ProjectFiles/todo-app-main/images/bg-desktop-light.jpg")
   ; background-repeat: no-repeat;
   background-size: 100% 30%;
   background-color: hsl(0, 0%, 98%);
-  color: hsl(235, 19%, 35%)
+  color: hsl(235, 19%, 35%);
+
+  .taskMaker {
+    background-color: white;
+  }
 }
 .darkTheme {
   background-image: url("../ProjectFiles/todo-app-main/images/bg-desktop-dark.jpg")
   ; background-repeat: no-repeat;
   background-size: 100% 30%;
   background-color: hsl(235, 21%, 11%);
-  color: hsl(234, 39%, 85%)
+  color: hsl(234, 39%, 85%);
+
+  .taskMaker {
+    background-color: hsl(235, 24%, 19%);
+  }
 }
 
+/* 
+Main container 
+*/
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  
+  align-items: center;
+}
+
+.containerItem {
+  width: 100%;
+}
+/* 
+
+Header
+
+*/
+.header{
+  display: flex;
+  justify-content: space-between;
+}
 h1 {
   color: hsl(0, 0%, 98%);;
 }
 .themeChanger {
-  background-color: ;
+  border-style: none;
+  background: none;
+  object-fit: contain;
 }
+
 /* ## Colors
 
 ### Primary

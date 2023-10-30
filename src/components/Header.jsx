@@ -17,9 +17,9 @@ const Header = () => {
     }
   };
   return (
-    <div >
+    <div className='header containerItem' >
       <h1>TODOList</h1>
-      <button className={"themeChanger"} style={{backgroundColor: 'black'}} onClick={changeTheme}>{temaClaro ? <Moon/> : <Sol/>}</button>
+      <button className={"themeChanger"}  onClick={changeTheme}>{temaClaro ? <Moon className={'tema'}/> : <Sol/>}</button>
       
       
     </div>
