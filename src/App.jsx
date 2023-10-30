@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import './App.css'
+
 import Tasks from './components/Tasks'
 import TaskMaker from './components/TaskMaker'
 import Header from './components/Header'
@@ -15,7 +15,7 @@ function App() {
  
   const [tasks, setTasks] = useState([...backUpTasks])
   return (
-    <div >
+    <div className='container'>
       
       <Header />
       <TaskMaker tasks={tasks} setTasks={setTasks} backUptasks={backUpTasks} setBackup= {setBackUp}/>

@@ -1,4 +1,111 @@
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Rubik:wght@600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  background-image: url("../ProjectFiles/todo-app-main/images/bg-desktop-light.jpg")
+  ; background-repeat: no-repeat;
+  /* font-family: 'Rubik', sans-serif;
+    weight 700
+  */
+  color: hsl(235, 19%, 35%)
+}
+.lightTheme {
+  background-image: url("../ProjectFiles/todo-app-main/images/bg-desktop-light.jpg")
+  ; background-repeat: no-repeat;
+  background-size: 100% 30%;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(235, 19%, 35%)
+}
+.darkTheme {
+  background-image: url("../ProjectFiles/todo-app-main/images/bg-desktop-dark.jpg")
+  ; background-repeat: no-repeat;
+  background-size: 100% 30%;
+  background-color: hsl(235, 21%, 11%);
+  color: hsl(234, 39%, 85%)
+}
+
+h1 {
+  color: hsl(0, 0%, 98%);;
+}
+.themeChanger {
+  background-color: ;
+}
+/* ## Colors
+
+### Primary
+
+- Bright Blue: hsl(220, 98%, 61%)
+- Check Background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%)
+
+### Neutral
+
+### Light Theme
+
+- Very Light Gray: hsl(0, 0%, 98%)
+- Very Light Grayish Blue: hsl(236, 33%, 92%)
+- Light Grayish Blue: hsl(233, 11%, 84%)
+- Dark Grayish Blue: hsl(236, 9%, 61%)
+- Very Dark Grayish Blue: hsl(235, 19%, 35%)
+
+### Dark Theme
+
+- Very Dark Blue: hsl(235, 21%, 11%)
+- Very Dark Desaturated Blue: hsl(235, 24%, 19%)
+- Light Grayish Blue: hsl(234, 39%, 85%)
+- Light Grayish Blue (hover): hsl(236, 33%, 92%)
+- Dark Grayish Blue: hsl(234, 11%, 52%)
+- Very Dark Grayish Blue: hsl(233, 14%, 35%)
+- Very Dark Grayish Blue: hsl(237, 14%, 26%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -67,3 +174,4 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+ */
