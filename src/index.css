@@ -38,7 +38,17 @@ body {
 
   .taskMaker {
     background-color: hsl(235, 24%, 19%);
+    border-radius: 5px
   }
+  .taskInput {
+    color: hsl(234, 39%, 85%);
+  }
+  .task {
+    background-color: hsl(235, 24%, 19%);
+    
+    border-bottom: 1px solid hsl(236, 33%, 92%);
+  }
+  
 }
 
 /* 
@@ -50,6 +60,7 @@ Main container
   width: 40%;
   
   align-items: center;
+  gap: 3rem;
 }
 
 .containerItem {
@@ -72,6 +83,50 @@ h1 {
   background: none;
   object-fit: contain;
 }
+
+
+.taskBtn{
+ 
+  background-color: transparent;
+  border-style: none;
+  border: 1px solid hsl(234, 11%, 52%);
+  color: transparent;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 60%;
+}
+form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  gap: 5%;
+  
+}
+label{
+  width:100%}
+.taskInput {
+  
+  background-color: transparent;
+  border-style: none;
+  height: 3rem;
+  width: 80%;
+ 
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.5em;
+}
+
+
+.task {
+  display: flex;
+  padding: 1rem;
+}
+/* style={{width: '50px', // Adjust the width and height as needed
+  height: '50px',
+  borderRadius: '50%', 
+  border: '1px solid black', 
+  backgroundColor: "white",color:'transparent'}} */
+
 
 /* ## Colors
 

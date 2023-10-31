@@ -15,9 +15,9 @@ const Tasks = ({tasks, setTasks, backUpTasks, setBackUp}) => {
   }
   
   return (
-    <div >
+    <div className="containerItem">
       {tasks.map((task) => (
-        <div className={task} key={task.id} >
+        <div className={`{task} task` }  key={task.id} >
             <button onClick={() => changeStatus(task.id)} style={{
     width: '50px', // Adjust the width and height as needed
     height: '50px',

@@ -19,18 +19,12 @@ const TaskMaker = ({tasks, setTasks, backUptasks, setBackup}) => {
   }
 
   return (
-    <div className="taskMaker containerItem" /* style={{
-      backgroundColor: document.body.className == "lightTheme"  ? 'green' :  'red'
-    }}*/> 
+    
       
-     <form  onSubmit={handleSubmit}>
-     <input style={{width: '50px', // Adjust the width and height as needed
-    height: '50px',
-    borderRadius: '50%', 
-    border: '1px solid black', 
-    backgroundColor: "white"}}type="submit" />
-      <label>
-        <input
+     <form className="taskMaker containerItem"  onSubmit={handleSubmit}>
+     <input className="taskBtn"type="submit" />
+      <label >
+        <input className="taskInput"
           type="text" 
           value={description}
           onChange={(e) => {setNewTask(e.target.value)}}
@@ -38,7 +32,7 @@ const TaskMaker = ({tasks, setTasks, backUptasks, setBackup}) => {
       </label>
       
     </form>
-    </div>
+    
   )
 }
 
