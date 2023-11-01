@@ -17,9 +17,9 @@ const TodosChooser = ({tasks, setTasks, backUpTasks, setBackUp}) => {
         setBackUp(newList)
      }
     return (
-    <div>
-      {tasks.length == 0 ? <p>You have no tasks left</p> : <p>You have {tasks.length} tasks remaining</p>}
-      <div>
+    <div className={"todosChooser"} >
+      {tasks.length == 0 ? <p>No tasks left</p> : <p>{tasks.length} tasks left</p>}
+      <div className="status">
       <button onClick={() => setTasks(backUpTasks)}>All</button>
       <button onClick={() => active()}>Active</button>    
       <button onClick={() => completed()}>Completed</button>

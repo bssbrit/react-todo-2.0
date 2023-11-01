@@ -25,9 +25,9 @@ const Tasks = ({tasks, setTasks, backUpTasks, setBackUp}) => {
     border: '1px solid black', 
     backgroundColor: task.status ? 'green' : 'red',
   }}></button>
-            <h2>{task.description}</h2> 
+            <p>{task.description}</p> 
             
-            <button onClick={() => removeTask(task.id)} style={{color: 'red', borderStyle: 'none', backgroundColor: 'white'}}>X</button>
+            <button onClick={() => removeTask(task.id)}>X</button>
             </div>
             
       ))}

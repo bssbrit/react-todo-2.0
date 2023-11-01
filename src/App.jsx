@@ -19,9 +19,11 @@ function App() {
       
       <Header />
       <TaskMaker tasks={tasks} setTasks={setTasks} backUptasks={backUpTasks} setBackup= {setBackUp}/>
+      <div className='containerItem'>
       <Tasks tasks={tasks} setTasks={setTasks} backUpTasks={backUpTasks} setBackUp = {setBackUp}/>
       <TodosChooser tasks={tasks} setTasks={setTasks} backUpTasks={backUpTasks} setBackUp={setBackUp}/>
-      <p>Drag and drop to reorder the list</p>
+      </div>
+      <p className='dragdrop'>Drag and drop to reorder the list</p>
     </>
   )
 }
